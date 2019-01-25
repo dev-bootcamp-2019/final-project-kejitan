@@ -1,0 +1,219 @@
+{
+    "data": [{
+        "evUtility": {
+            "uName": "ChargePoint",
+            "uLogo": "QmYmV7MSGiPCDtQVcdr9azen231LexXcePX1Kz3KrjDTuh"
+        },
+        "evStations": [{
+            "city": "Bangkok",
+            "stationName": "ChargePoint Bangkok1",
+            "type": "Level2"
+        }, {
+            "city": "Bangkok",
+            "stationName": "ChargePoint Bangkok2",
+            "type": "Level2"
+        }, {
+            "city": "Bangkok",
+            "stationName": "ChargePoint Bangkok3",
+            "type": "DC"
+        }, {
+            "city": "Bangkok",
+            "stationName": "ChargePoint Bangkok4",
+            "type": "DC"
+        }, {
+            "city": "Hong Kong",
+            "stationName": "ChargePoint Hong Kong1",
+            "type": "Level2"
+        }, {
+            "city": "Hong Kong",
+            "stationName": "ChargePoint Hong Kong2",
+            "type": "Level2"
+        }, {
+            "city": "Hong Kong",
+            "stationName": "ChargePoint Hong Kong3",
+            "type": "DC"
+        }, {
+            "city": "Hong Kong",
+            "stationName": "ChargePoint Hong Kong4",
+            "type": "Level2"
+        }, {
+            "city": "Mumbai",
+            "stationName": "ChargePoint Mumbai1",
+            "type": "Level2"
+        }, {
+            "city": "Mumbai",
+            "stationName": "ChargePoint Mumbai2",
+            "type": "Level2"
+        }, {
+            "city": "Mumbai",
+            "stationName": "ChargePoint Mumbai3",
+            "type": "DC"
+        }, {
+            "city": "Mumbai",
+            "stationName": "ChargePoint Mumbai4",
+            "type": "DC"
+            }]
+    }, {
+        "evUtility": {
+            "uName": "Nissan",
+            "uLogo": "QmcP9ZdQk4m3pp4YdwATExknH3EtGRQgBH7SFFFpUWQpzB"
+        },
+        "evStations": [{
+            "city": "Bangkok",
+            "stationName": "Nissan Bangkok1",
+            "type": "Level2"
+        }, {
+            "city": "Bangkok",
+            "stationName": "Nissan Bangkok2",
+            "type": "Level2"
+        }, {
+            "city": "Bangkok",
+            "stationName": "Nissan Bangkok3",
+            "type": "DC"
+        }, {
+            "city": "Bangkok",
+            "stationName": "Nissan Bangkok4",
+            "type": "DC"
+        }, {
+            "city": "Hong Kong",
+            "stationName": "Nissan Hong Kong1",
+            "type": "Level2"
+        }, {
+            "city": "Hong Kong",
+            "stationName": "Nissan Hong Kong2",
+            "type": "Level2"
+        }, {
+            "city": "Hong Kong",
+            "stationName": "Nissan Hong Kong3",
+            "type": "DC"
+        }, {
+            "city": "Hong Kong",
+            "stationName": "Nissan Hong Kong4",
+            "type": "Level2"
+        }, {
+            "city": "Mumbai",
+            "stationName": "Nissan Mumbai1",
+            "type": "Level2"
+        }, {
+            "city": "Mumbai",
+            "stationName": "Nissan Mumbai2",
+            "type": "Level2"
+        }, {
+            "city": "Mumbai",
+            "stationName": "Nissan Mumbai3",
+            "type": "DC"
+        }, {
+            "city": "Mumbai",
+            "stationName": "Nissan Mumbai4",
+            "type": "DC"
+        }]
+    }, {
+        "evUtility": {
+            "uName": "GridSpace",
+            "uLogo": "QmVdjSXNGfB9CNDWE4NkVjwMJf8vbvWtSFEAUe5vA4tqyQ"
+        },
+        "evStations": [{
+            "city": "Bangkok",
+            "stationName": "GridSpace Bangkok1",
+            "type": "Level2"
+        }, {
+            "city": "Bangkok",
+            "stationName": "GridSpace Bangkok2",
+            "type": "Level2"
+        }, {
+            "city": "Bangkok",
+            "stationName": "GridSpace Bangkok3",
+            "type": "DC"
+        }, {
+            "city": "Bangkok",
+            "stationName": "GridSpace Bangkok4",
+            "type": "DC"
+        }, {
+            "city": "Hong Kong",
+            "stationName": "GridSpace Hong Kong1",
+            "type": "Level2"
+        }, {
+            "city": "Hong Kong",
+            "stationName": "GridSpace Hong Kong2",
+            "type": "Level2"
+        }, {
+            "city": "Hong Kong",
+            "stationName": "GridSpace Hong Kong3",
+            "type": "DC"
+        }, {
+            "city": "Hong Kong",
+            "stationName": "GridSpace Hong Kong4",
+            "type": "Level2"
+        }, {
+            "city": "Mumbai",
+            "stationName": "GridSpace Mumbai1",
+            "type": "Level2"
+        }, {
+            "city": "Mumbai",
+            "stationName": "GridSpace Mumbai2",
+            "type": "Level2"
+        }, {
+            "city": "Mumbai",
+            "stationName": "GridSpace Mumbai3",
+            "type": "DC"
+        }, {
+            "city": "Mumbai",
+            "stationName": "GridSpace Mumbai4",
+            "type": "DC"
+        }]
+    }, {
+        "evUtility": {
+            "uName": "Enron",
+            "uLogo": "QmS15UgPj7dp3MZajGpXcUvZNq4k3CXBHGDcr4pEuzmVrT"
+        },
+        "evStations": [{
+            "city": "Bangkok",
+            "stationName": "Enron Bangkok1",
+            "type": "Level2"
+        }, {
+            "city": "Bangkok",
+            "stationName": "Enron Bangkok2",
+            "type": "Level2"
+        }, {
+            "city": "Bangkok",
+            "stationName": "Enron Bangkok3",
+            "type": "DC"
+        }, {
+            "city": "Bangkok",
+            "stationName": "Enron Bangkok4",
+            "type": "DC"
+        }, {
+            "city": "Hong Kong",
+            "stationName": "Enron Hong Kong1",
+            "type": "Level2"
+        }, {
+            "city": "Hong Kong",
+            "stationName": "Enron Hong Kong2",
+            "type": "Level2"
+        }, {
+            "city": "Hong Kong",
+            "stationName": "Enron Hong Kong3",
+            "type": "DC"
+        }, {
+            "city": "Hong Kong",
+            "stationName": "Enron Hong Kong4",
+            "type": "Level2"
+        }, {
+            "city": "Mumbai",
+            "stationName": "Enron Mumbai1",
+            "type": "Level2"
+        }, {
+            "city": "Mumbai",
+            "stationName": "Enron Mumbai2",
+            "type": "Level2"
+        }, {
+            "city": "Mumbai",
+            "stationName": "Enron Mumbai3",
+            "type": "DC"
+        }, {
+            "city": "Mumbai",
+            "stationName": "Enron Mumbai4",
+            "type": "DC"
+        }]
+    }]
+}

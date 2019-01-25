@@ -1,0 +1,188 @@
+/* PAGE */
+
+body {
+  font-family: sans-serif;
+  font-size: 16px;
+  margin: 0;
+}
+
+h1, h2, h3 {
+  font-family: 'Oswald', 'Arial Narrow', sans-serif;
+}
+
+.current-account {
+  color: grey;
+  margin: 15px;
+}
+
+.container {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 45px 20px;
+}
+
+.row-disabled {
+  opacity: 0.5;
+}
+
+.duration {
+  font-size: 14px;
+  color: grey;
+  margin: 5px;
+}
+
+.city {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 5px;
+}
+
+.arrow {
+  padding: 15px 0;
+}
+
+.datetime {
+  font-size: 12px;
+  white-space: nowrap;
+  margin: 5px;
+}
+
+.evUtility-and-price {
+  margin: 5px 0;
+  white-space: nowrap;
+}
+
+.evUtility {
+  font-weight: bold;
+  color: grey;
+}
+
+.price {
+  font-weight: bold;
+  color: green;
+  white-space: nowrap;
+}
+
+.total {
+  margin: 5px;
+}
+
+.action-buttons {
+  white-space: nowrap;
+}
+
+.customer-details {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.book-button, .buy-now-button {
+  margin: 10px 15px !important;
+}
+
+.booking-details-field {
+  width: 400px;
+}
+
+.search-result-paper, .my-purchase-paper, .sold-slot-paper {
+  margin: 15px;
+  padding: 15px;
+}
+
+.purchase-id {
+  margin: 15px;
+  color: grey;
+}
+
+.slot-customer-details {
+  color: grey;
+  font-size: smaller;
+}
+
+.customer-details-value {
+  color: black;
+  font-weight: bold;
+  font-size: larger;
+}
+
+.my-purchase-loading {
+  text-align: center;
+  padding-top: 15px;
+}
+
+.sold-slots-container {
+  max-height: 400px;
+  overflow-y: scroll;
+  background: #f0f0f0;
+  padding: 0px;
+  position: relative;
+}
+
+.slot-buyer {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.sold-slot-paper .slot-loading {
+  text-align: center;
+  padding-top: 20px;
+}
+
+.sold-slot-paper .purchase-id {
+  margin: 20px;
+}
+
+.sold-slot-paper .slot-id {
+  margin-top: 20px;
+  white-space: nowrap;
+}
+
+.sold-slot-paper .slot {
+  margin-top: 5px;
+}
+
+.evUtility-logo-input {
+  display: none;
+}
+
+.evUtility-logo-card {
+  display: flex;
+  position: relative;
+}
+
+.evUtility-logo-form-image {
+  width: 128px;
+  height: 64px;
+  margin-right: 20px;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+.evUtility-logo-actions {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+}
+
+.evUtility-logo-button {
+  white-space: nowrap;
+}
+
+.evUtility-logo-loader {
+  position: absolute;
+  top: 15px;
+  left: 50px;
+}
+
+.evUtility-logo {
+  width: 128px;
+  height: 64px;
+  margin: 5px;
+}
+
+.evUtility-logo-small {
+  width: 96px;
+  height: 48px;
+  margin: 0;
+}
