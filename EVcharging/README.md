@@ -19,7 +19,7 @@ Contracts are deployed in Rinkeby testnet. Contract addresses in Rinkeby are lis
 
 The UI is available here:
   
-* IPFS directly: Takes long time toload and has not been tried
+* IPFS directly: Takes long time to load and has not been tried
 * Traditionally hosted: https://kejitan.github.io/EVcharging/
 
 Check the *Play around* block in the [How to run it](#how-to-run-it) section to get an idea of what you can do.
@@ -28,7 +28,7 @@ Sample data is deployed with cities: Mumbai, Bangkok, Hong Kong, Delhi.
 
 Check it out, try booking. If you need test ether in Rinkeby, use the [faucet](https://faucet.rinkeby.io/) to get some and come back.
 
-On Rinkeby network (https://kejitan.github.io/EVcharging/) you will not have Admin or EVutility roles. You can book slots on the esxisting EVstatioins as a regular customer. You can test full functionality in the development mode (Decsribed below in "How to run it").
+On Rinkeby network (https://kejitan.github.io/EVcharging/) you will not have Admin or EVutility roles. You can book slots on the existing EVstatioins as a regular customer. You can test full functionality in the development mode (Decsribed below in "How to run it").
 
 ## Architecture
 
@@ -59,6 +59,11 @@ Payment history is stored in the event logs.
 Users can find the history of Charging Slots they paid for in *My Payments*.
 
 EVutility owners can find the history of Charging Slots they sold in *My EVutilities* > *Sold Slots*.
+
+Cost of the Ev charging slot is based on kWH and duration of time requested by the following formula. The time is in seconds, and is given in wei. 
+cost in wei = 10000000000000*duration (insecond) + 3000000000000000*kWH
+
+It was intended to use URL query for Oracle that would calculate the cost based on EV station ID since the location parking rates and energy rates are expected to be based on location. However, I did not have time to implement Oracle.
 
 The main contract is `EVcharging`, implemented in *Solidity*. It uses `SafeMath` library base contract provided by Zeppelin. Zeppelin package code is updated manually from their github and the used files are saved to the repository.
 
