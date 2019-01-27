@@ -21,6 +21,7 @@
 * export PATH=/eval-truffle5/node-v10.15.0-linux-x64/bin:$PATH
 
 #Save the file and open another terminal so that above change takes place
+
 #In the new terminal 
 ### $ cd ~/eval-truffle5
 ### $ source ~/eval-truffle5/bin/activate
