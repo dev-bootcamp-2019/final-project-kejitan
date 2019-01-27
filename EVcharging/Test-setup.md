@@ -6,14 +6,14 @@
 * If your OS is different, you may try VirtualBox Ubuntu 16.04.5 set up
 
 #Install virtualenv if not already installed
-## $ cd ~
-## $ sudo apt-get install python3-pip
-## $ pip3 install virtualenv
+### $ cd ~
+### $ sudo apt-get install python3-pip
+### $ pip3 install virtualenv
 
 #Create virual environment
-## $ virtualenv eval-truffle5
-## $ source ~/eval-truffle5/bin/activate
-## $ cd ~/eval-truffle5
+### $ virtualenv eval-truffle5
+### $ source ~/eval-truffle5/bin/activate
+### $ cd ~/eval-truffle5
 
 #From Web browser visit https://nodejs.org download LTS version 10.15.0 in ~/eval-truffle5. Extract node-v10.15.0-linux-x64.tar.xz in the same directory
 
@@ -22,14 +22,14 @@
 
 #Save the file and open another terminal so that above change takes place
 #In the new terminal 
-## $ cd ~/eval-truffle5
-## $ source ~/eval-truffle5/bin/activate
-## (eval-truffle5) $ echo $PATH   
+### $ cd ~/eval-truffle5
+### $ source ~/eval-truffle5/bin/activate
+### (eval-truffle5) $ echo $PATH   
 #verify PATH
-## (eval-truffle5) $ node -v
+### (eval-truffle5) $ node -v
 
 #10.15.0
-## $npm -v
+### $npm -v
 
 #6.4.1
 * (eval-truffle5) $ npm install -g ganache-cli
