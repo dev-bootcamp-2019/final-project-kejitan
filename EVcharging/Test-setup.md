@@ -13,7 +13,6 @@
 #Create virual environment
 * $ virtualenv eval-truffle5
 * $ source ~/eval-truffle5/bin/activate
-
 * $ cd ~/eval-truffle5
 
 #From Web browser visit https://nodejs.org download LTS version 10.15.0 in ~/eval-truffle5. Extract node-v10.15.0-linux-x64.tar.xz in the same directory
@@ -28,25 +27,32 @@
 * (eval-truffle5) $ echo $PATH   
 #verify PATH
 * (eval-truffle5) $ node -v
+
 #10.15.0
 * $npm -v
+
 #6.4.1
 * (eval-truffle5) $ npm install -g ganache-cli
 
 #If you have not installed metamask, you can add the extension to your browser by visiting https://metamask.io and follow the instructions
+
 # Please set Network to Private Natwork -> Localhost:8545 on Metamask.You should see ether in your accounts from ganache-cli
+
 # Please have at lease 3 accounts ready with ether present in your Metamask wallet
 
 # While still in ~/eval-truffle5 directory and in the environment eval-truffle5 (look for this marker before the $ prompt)
 
 * (eval-truffle5) $ npm install -g truffle@5.0.2
 * (eval-truffle5) $ which truffle
-* Output something like: /home/username/eval-truffle5/node-v10.15.0-linux-x64/bin/truffle
+
+#Output something like: /home/username/eval-truffle5/node-v10.15.0-linux-x64/bin/truffle
 
 #In my case simple 'truffle compile' pointed to the older version), so please give explicit path if necessary
 * (eval-truffle5) $ ~/eval-truffle5/node-v10.15.0-linux-x64/bin/truffle version 
-* Solidity v0.5.0 (solc-js)
-* Node v10.15.0
+
+#Solidity v0.5.0 (solc-js)
+
+#Node v10.15.0
 
 # Now we are ready to set up the project
 * (eval-truffle5) $ git clone https://github.com/dev-bootcamp-2019/final-project-kejitan.git
