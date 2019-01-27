@@ -16,12 +16,10 @@ $ source ~/eval-truffle5/bin/activate
 
 $ cd ~/eval-truffle5
 
-From Web browser visit https://nodejs.org
-Download LTS version 10.15.0 in ~/eval-truffle5
-extract node-v10.15.0-linux-x64.tar.xz in the same irectory
+* From Web browser visit https://nodejs.org download LTS version 10.15.0 in ~/eval-truffle5. Extract node-v10.15.0-linux-x64.tar.xz in the same directory
 
-to the file ~/.bashrc, add the following at the end
-export PATH=~/eval-truffle5/node-v10.15.0-linux-x64/bin:$PATH
+* To the file /home/username/.bashrc, add the following at the end
+* export PATH=~/eval-truffle5/node-v10.15.0-linux-x64/bin:$PATH
 
 Save the file and open another terminal so that above change takes place
 In the new terminal 
@@ -29,74 +27,75 @@ $ cd ~/eval-truffle5
 $ source ~/eval-truffle5/bin/activate
 (eval-truffle5) $ echo $PATH   
 * -- verify PATH
-(eval-truffle5) $ node -v
-#10.15.0
-$npm -v
-#6.4.1
-(eval-truffle5) $ npm install -g ganache-cli
-# if you have not installed metamask, you can add the extension to your browser by visiting https://metamask.io and follow the instructions
-# Please set Network to Private Natwork -> Localhost:8545 on Metamask.You shpuld see ether in your accounts from ganache-cli
-# Please have at lease 3 accounts ready with ether present in your Metamask wallet
+* (eval-truffle5) $ node -v
+* 10.15.0
+* $npm -v
+* 6.4.1
+* (eval-truffle5) $ npm install -g ganache-cli
 
-# While still in ~/eval-truffle5 directory and in the environment eval-truffle5 (look for this marker before the $ prompt)
+* if you have not installed metamask, you can add the extension to your browser by visiting https://metamask.io and follow the instructions
+* Please set Network to Private Natwork -> Localhost:8545 on Metamask.You shpuld see ether in your accounts from ganache-cli
+* Please have at lease 3 accounts ready with ether present in your Metamask wallet
 
-(eval-truffle5) $ npm install -g truffle@5.0.2
-(eval-truffle5) $ which truffle
-# something like: ~/eval-truffle5/node-v10.15.0-linux-x64/bin/truffle
+* While still in ~/eval-truffle5 directory and in the environment eval-truffle5 (look for this marker before the $ prompt)
 
-# In my case simple 'truffle compile' pointed to the older version), so please give explicit path if necessary
-(eval-truffle5) $ ~/eval-truffle5/node-v10.15.0-linux-x64/bin/truffle version 
-# Solidity v0.5.0 (solc-js)
-# Node v10.15.0
+* (eval-truffle5) $ npm install -g truffle@5.0.2
+* (eval-truffle5) $ which truffle
+* something like: ~/eval-truffle5/node-v10.15.0-linux-x64/bin/truffle
+
+* In my case simple 'truffle compile' pointed to the older version), so please give explicit path if necessary
+* (eval-truffle5) $ ~/eval-truffle5/node-v10.15.0-linux-x64/bin/truffle version 
+* Solidity v0.5.0 (solc-js)
+* Node v10.15.0
 
 # Now we are ready to set up the project
-(eval-truffle5) $ git clone https://github.com/dev-bootcamp-2019/final-project-kejitan.git
+* (eval-truffle5) $ git clone https://github.com/dev-bootcamp-2019/final-project-kejitan.git
 
-(eval-truffle5) $ cd ~/eval-truffle5/final-project-kejitan/EVcharging
+* (eval-truffle5) $ cd ~/eval-truffle5/final-project-kejitan/EVcharging
 
-(eval-truffle5): Project directory $ ~/eval-truffle5/node-v10.15.0-linux-x64/bin/truffle compile
+* (eval-truffle5): Project directory $ ~/eval-truffle5/node-v10.15.0-linux-x64/bin/truffle compile
 
-	Compiling ./contracts/EVcharging.sol...
-	Compiling ./contracts/Migrations.sol...
-	Compiling ./installed_contracts/oraclize/ethereum-api/oraclizeAPI_0.5.sol...
-	Compiling ./installed_contracts/zeppelin/contracts/math/SafeMath.sol...
-	Compiling ./installed_contracts/zeppelin/contracts/ownership/Ownable.sol...
+	-Compiling ./contracts/EVcharging.sol...
+	-Compiling ./contracts/Migrations.sol...
+	-Compiling ./installed_contracts/oraclize/ethereum-api/oraclizeAPI_0.5.sol...
+	-Compiling ./installed_contracts/zeppelin/contracts/math/SafeMath.sol...
+	-Compiling ./installed_contracts/zeppelin/contracts/ownership/Ownable.sol...
 
-	Compilation warnings encountered:
+	-Compilation warnings encountered:
 
-	/home/kejitan/eval-truffle6/final-project-kejitan/EVcharging/contracts/EVcharging.sol:3:1: Warning: Experimental features are turned on. Do not use experimental features on live deployments.
-	pragma experimental ABIEncoderV2;
-	^-------------------------------^
+	-/home/kejitan/eval-truffle6/final-project-kejitan/EVcharging/contracts/EVcharging.sol:3:1: Warning: Experimental features are turned on. Do not use experimental features on live deployments.
+	-pragma experimental ABIEncoderV2;
+	-^-------------------------------^
 
-	Writing artifacts to ./build/contracts
-
-
-(eval-truffle5): Project directory$ ~/eval-truffle5/node-v10.15.0-linux-x64/bin/truffle migrate --reset
-
-	If you're using an HDWalletProvider, it must be Web3 1.0 enabled or your migration will hang.
+	-Writing artifacts to ./build/contracts
 
 
-	Starting migrations...
-	======================
-	> Network name:    'development'
-	> Network id:      1548589343764
-	> Block gas limit: 6721975
+* (eval-truffle5): Project directory$ ~/eval-truffle5/node-v10.15.0-linux-x64/bin/truffle migrate --reset
+
+	- If you're using an HDWalletProvider, it must be Web3 1.0 enabled or your migration will hang.
 
 
-	1_initial_migration.js
-	======================
+	- Starting migrations...
+	- ======================
+	- > Network name:    'development'
+	- > Network id:      1548589343764
+	- > Block gas limit: 6721975
 
-	   Replacing 'Migrations'
-	   ----------------------
-	   > transaction hash:    0xf285a35d26018f3d4759a51c392b755dccbb219fc2a841fddb0b6934bd841216
-	   > Blocks: 0            Seconds: 0
-	   > contract address:    0x571B57d7bb6d87C8eC846E79b0EB3cad25aD039e
-	   > account:             0x83cF3d35832e15E9a89233b3a1961e784C07aF05
-	   > balance:             99.47850926
-	   > gas used:            273162
-	   > gas price:           20 gwei
-	   > value sent:          0 ETH
-	   > total cost:          0.00546324 ETH
+
+	- 1_initial_migration.js
+	- ======================
+
+	-    Replacing 'Migrations'
+	-    ----------------------
+	-    > transaction hash:    0xf285a35d26018f3d4759a51c392b755dccbb219fc2a841fddb0b6934bd841216
+	-    > Blocks: 0            Seconds: 0
+	-    > contract address:    0x571B57d7bb6d87C8eC846E79b0EB3cad25aD039e
+	-    > account:             0x83cF3d35832e15E9a89233b3a1961e784C07aF05
+	-    > balance:             99.47850926
+	-    > gas used:            273162
+	-    > gas price:           20 gwei
+	-    > value sent:          0 ETH
+	-    > total cost:          0.00546324 ETH
 
 
 	   > Saving migration to chain.
