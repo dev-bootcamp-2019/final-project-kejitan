@@ -36,11 +36,11 @@
 
 #If you have not installed metamask, you can add the extension to your browser by visiting https://metamask.io and follow the instructions
 
-# Please set Network to Private Natwork -> Localhost:8545 on Metamask.You should see ether in your accounts from ganache-cli
+#Please set Network to Private Natwork -> Localhost:8545 on Metamask.You should see ether in your accounts from ganache-cli
 
-# Please have at lease 3 accounts ready with ether present in your Metamask wallet
+#Please have at lease 3 accounts ready with ether present in your Metamask wallet
 
-# While still in ~/eval-truffle5 directory and in the environment eval-truffle5 (look for this marker before the $ prompt)
+#While still in ~/eval-truffle5 directory and in the environment eval-truffle5 (look for this marker before the $ prompt)
 
 * (eval-truffle5) $ npm install -g truffle@5.0.2
 * (eval-truffle5) $ which truffle
