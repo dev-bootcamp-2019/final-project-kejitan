@@ -137,7 +137,7 @@ The contract files were upoloaded to https://tool.smartdec.net/. Some issues are
 
 Slither was used to test the contracts
 This was done in a a virtual machine runniong Ubuntu 18.04.1. This is because slither has problms with Python 3.5.2 that is native to Ubuntu 16.04.5
-The tests did not report severe issues. The output can be seen at  [Read here](SlitherOutput.txt)
+The tests did not report severe issues. The output can be seen at  [Read here](SlitherOutput.md)
 
 Mythril
 This package too needs Python 3.6+ So this was tried on Python Ubuntu 18.04.1. However, it required Truffle 4. I need Solidity 0.5.2 for OpenZeppelin contracts to work properly. I tried Solc-js 0.5.2 from Truffle 4 environment. However mythril --truffle complained that it requires Truffle 4. So abandoned further efforts.
