@@ -1,8 +1,10 @@
-# I recommend setting up the project (EVcharging) in virtual environment
-# My project uses Truffle 5.0.2, Solidity 0.5.2, web3 1.0 and will give
-# compilation/execution errors on Truffle 4 set up
-# The following instructions are for Ubuntu
-# If your OS is different, you may try VirtualBox Ubuntu 16.04.5 set up
+# Test setup for EVcharging Application
+
+* I recommend setting up the project (EVcharging) in virtual environment
+* My project uses Truffle 5.0.2, Solidity 0.5.2, web3 1.0 and will give
+* compilation/execution errors on Truffle 4 set up
+* The following instructions are for Ubuntu
+* If your OS is different, you may try VirtualBox Ubuntu 16.04.5 set up
 
 cd ~
 $ sudo apt-get install python3-pip
@@ -26,7 +28,7 @@ In the new terminal
 $ cd ~/eval-truffle5
 $ source ~/eval-truffle5/bin/activate
 (eval-truffle5) $ echo $PATH   
-# -- verify PATH
+* -- verify PATH
 (eval-truffle5) $ node -v
 #10.15.0
 $npm -v
