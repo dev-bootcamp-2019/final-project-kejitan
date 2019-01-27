@@ -60,6 +60,7 @@
   "dependencies": {
     "@material-ui/core": "^1.4.0",
     "@material-ui/icons": "^1.1.0",
+    "bignumber.js": "^8.0.2",
     "dotenv": "^6.0.0",
     "ipfs-api": "^22.3.0",
     "react": "^16.4.1",

@@ -78,59 +78,19 @@ Another contract, `FlightTicketsRegistry` is directy taken from Flight Tickets p
 * truffle 5.0.2
 * ganache-cli 6.2.5
 * Solidity 0.5.2
+* web3 1.0
 * browser with MetaMask connected to ganache-cli
 
 ## How to run it
 
-1. Clone the repository and navigate to it
-```
-git clone https://github.com/kejitan/EVcharging.git
-cd EVcharging
-```
+Please refer to the following document for test set up.
 
-2. Install dependencies:
+[Read here](Test-setup.md)
 
-```
-npm install
-```
 
-3. Run Ganache:
+Play around. Try searching & buying tickets.
 
-```
-ganache-cli
-```
-
-Make sure it's listening at `127.0.0.1:8545`.
-
-3. Compile the contracts:
-
-```
-truffle compile
-```
-
-4. Deploy the contracts
-
-```
-truffle migrate
-```
-
-5. *This step is optional.* Populate the contract with sample data. Do it if you want to have some data to play with. Otherwise you can add all EVutilities and EVstations by yourself.
-
-```
-npm run populate
-```
-
-If you want to change the sample data, it's configured in `sample-data.json`.
-
-6. Run the frontend
-
-```
-npm run start
-```
-
-7. Play around. Try searching & buying tickets.
-
-Sample data provides EV Charging Stations in Mumbai, Bangkok, Hong Kong. 
+Sample data provides EV Charging Stations in Mumbai, Bangkok, Hong Kong, and also in Delhi in case of application on Rinkeby network (https://kejitan.github.io/EVcharging/). 
 
 Results are sorted either by price.
 

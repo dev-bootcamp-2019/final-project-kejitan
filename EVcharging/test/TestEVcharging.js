@@ -1,5 +1,5 @@
 const EVcharging = artifacts.require("EVcharging");
-const BigNumber = require('bignumber.js');
+//const BigNumber = require('bignumber.js');
 
 // Function to verify that a contract call has failed (reverted) during execution
 async function hasReverted(contractCall) {
