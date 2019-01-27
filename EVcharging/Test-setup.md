@@ -32,7 +32,7 @@
 ### $npm -v
 
 #6.4.1
-* (eval-truffle5) $ npm install -g ganache-cli
+### (eval-truffle5) $ npm install -g ganache-cli
 
 #If you have not installed metamask, you can add the extension to your browser by visiting https://metamask.io and follow the instructions
 
