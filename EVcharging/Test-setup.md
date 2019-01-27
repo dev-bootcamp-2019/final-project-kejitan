@@ -6,26 +6,26 @@
 * The following instructions are for Ubuntu
 * If your OS is different, you may try VirtualBox Ubuntu 16.04.5 set up
 
-cd ~
-$ sudo apt-get install python3-pip
-$ pip3 install virtualenv
+* cd ~
+* $ sudo apt-get install python3-pip
+* $ pip3 install virtualenv
 
 #Create virual environment
-$ virtualenv eval-truffle5
-$ source ~/eval-truffle5/bin/activate
+* $ virtualenv eval-truffle5
+* $ source ~/eval-truffle5/bin/activate
 
-$ cd ~/eval-truffle5
+* $ cd ~/eval-truffle5
 
 * From Web browser visit https://nodejs.org download LTS version 10.15.0 in ~/eval-truffle5. Extract node-v10.15.0-linux-x64.tar.xz in the same directory
 
 * To the file /home/username/.bashrc, add the following at the end
-* export PATH=~/eval-truffle5/node-v10.15.0-linux-x64/bin:$PATH
+* export PATH=/eval-truffle5/node-v10.15.0-linux-x64/bin:$PATH
 
 Save the file and open another terminal so that above change takes place
 In the new terminal 
-$ cd ~/eval-truffle5
-$ source ~/eval-truffle5/bin/activate
-(eval-truffle5) $ echo $PATH   
+* $ cd ~/eval-truffle5
+* $ source ~/eval-truffle5/bin/activate
+* (eval-truffle5) $ echo $PATH   
 * -- verify PATH
 * (eval-truffle5) $ node -v
 * 10.15.0
@@ -41,7 +41,7 @@ $ source ~/eval-truffle5/bin/activate
 
 * (eval-truffle5) $ npm install -g truffle@5.0.2
 * (eval-truffle5) $ which truffle
-* something like: ~/eval-truffle5/node-v10.15.0-linux-x64/bin/truffle
+* Output something like: /home/username/eval-truffle5/node-v10.15.0-linux-x64/bin/truffle
 
 * In my case simple 'truffle compile' pointed to the older version), so please give explicit path if necessary
 * (eval-truffle5) $ ~/eval-truffle5/node-v10.15.0-linux-x64/bin/truffle version 
