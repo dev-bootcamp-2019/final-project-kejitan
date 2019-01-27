@@ -42,22 +42,22 @@
 
 #While still in ~/eval-truffle5 directory and in the environment eval-truffle5 (look for this marker before the $ prompt)
 
-* (eval-truffle5) $ npm install -g truffle@5.0.2
-* (eval-truffle5) $ which truffle
+### (eval-truffle5) $ npm install -g truffle@5.0.2
+### (eval-truffle5) $ which truffle
 
 #Output something like: /home/username/eval-truffle5/node-v10.15.0-linux-x64/bin/truffle
 
 #In my case simple 'truffle compile' pointed to the older version), so please give explicit path if necessary
-* (eval-truffle5) $ ~/eval-truffle5/node-v10.15.0-linux-x64/bin/truffle version 
+### (eval-truffle5) $ ~/eval-truffle5/node-v10.15.0-linux-x64/bin/truffle version 
 
 #Solidity v0.5.0 (solc-js)
 
 #Node v10.15.0
 
 # Now we are ready to set up the project
-* (eval-truffle5) $ git clone https://github.com/dev-bootcamp-2019/final-project-kejitan.git
-* (eval-truffle5) $ cd ~/eval-truffle5/final-project-kejitan/EVcharging
-* (eval-truffle5): Project directory $ ~/eval-truffle5/node-v10.15.0-linux-x64/bin/truffle compile
+### (eval-truffle5) $ git clone https://github.com/dev-bootcamp-2019/final-project-kejitan.git
+### (eval-truffle5) $ cd ~/eval-truffle5/final-project-kejitan/EVcharging
+### (eval-truffle5): Project directory $ ~/eval-truffle5/node-v10.15.0-linux-x64/bin/truffle compile
 
 	- Compiling ./contracts/EVcharging.sol...
 	- Compiling ./contracts/Migrations.sol...
@@ -74,7 +74,7 @@
 	- Writing artifacts to ./build/contracts
 
 
-* (eval-truffle5): Project directory$ ~/eval-truffle5/node-v10.15.0-linux-x64/bin/truffle migrate --reset
+### (eval-truffle5): Project directory$ ~/eval-truffle5/node-v10.15.0-linux-x64/bin/truffle migrate --reset
 
 	- If you're using an HDWalletProvider, it must be Web3 1.0 enabled or your migration will hang.
 
@@ -161,7 +161,7 @@
 	- > Total deployments:   4
 	- > Final cost:          0.09299994 ETH
 
-* (eval-truffle5): Project directory$ ~/eval-truffle5/node-v10.15.0-linux-x64/bin/truffle test
+### (eval-truffle5): Project directory$ ~/eval-truffle5/node-v10.15.0-linux-x64/bin/truffle test
 
 - Using network 'development'.
 
@@ -190,11 +190,11 @@
 -  17 passing (3s)
 
 
-* (eval-truffle5): Project directory$ npm install
+### (eval-truffle5): Project directory$ npm install
 
 -	long output
 
-* (eval-truffle5): Project directory$ npm run populate
+### (eval-truffle5): Project directory$ npm run populate
 
 -	> EVcharging@0.1.0 populate /home/kejitan/eval-truffle5/final-project-kejitan/EVcharging
 -	> node scripts/populate.js
@@ -256,7 +256,7 @@
 -	Adding evStation: Mumbai Enron Mumbai4 DC
 -	Enron now has 12 evStations.
 
-* (eval-truffle5): Project directory$ npm run start
+### (eval-truffle5): Project directory$ npm run start
 
 -The web application 'Electric Vehicle Charging' will start on port 3000
 
