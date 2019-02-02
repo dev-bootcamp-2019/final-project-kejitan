@@ -1,6 +1,6 @@
 # Test setup for EVcharging Application
 
-* I recommend setting up the project (EVcharging) in virtual environment
+* If you do not have TRuffle 5 installed, I recommend setting up the project (EVcharging) in virtual environment
 * My project uses Truffle 5.0.2, Solidity 0.5.2, web3 1.0 and will give compilation/execution errors on Truffle 4 set up
 * The following instructions are for Ubuntu
 * If your OS is different, you may try VirtualBox Ubuntu 16.04.5 set up
@@ -9,16 +9,17 @@
 ### $ cd ~
 ### $ sudo apt-get install python3-pip
 ### $ pip3 install virtualenv
+### alternatively sudo apt-get install virtualenv
 
 #Create virual environment
 ### $ virtualenv eval-truffle5
 ### $ source ~/eval-truffle5/bin/activate
 ### $ cd ~/eval-truffle5
 
-#From Web browser visit https://nodejs.org download LTS version 10.15.0 in ~/eval-truffle5. Extract node-v10.15.0-linux-x64.tar.xz in the same directory
+#From Web browser visit https://nodejs.org download LTS version 10.15.0 in ~/eval-truffle5. Extract node-v10.15.0-linux-x64.tar.xz in the same directory. (if you download node-v10.15.1-linux-x64.tar.xz, please modify paths accordingly)
 
 * To the file /home/username/.bashrc, add the following at the end
-* export PATH=/eval-truffle5/node-v10.15.0-linux-x64/bin:$PATH
+* export PATH=~/eval-truffle5/node-v10.15.0-linux-x64/bin:$PATH
 
 #Save the file and open another terminal so that above change takes place
 
@@ -34,31 +35,30 @@
 
 #6.4.1
 ### (eval-truffle5) $ npm install -g ganache-cli
+### (eval-truffle5) $ ganache-cli
 
+# There is someproblem with date-time widget input inb Firefox. Please open Google chrome.
 #If you have not installed metamask, you can add the extension to your browser by visiting https://metamask.io and follow the instructions
 
-#Please set Network to Private Natwork -> Localhost:8545 on Metamask.You should see ether in your accounts from ganache-cli
+#Please set Network to Private Natwork -> Localhost:8545 on Metamask. Export at least 3 accounts from ganache-cli to Metamask
 
-#Please have at lease 3 accounts ready with ether present in your Metamask wallet
-
-#While still in ~/eval-truffle5 directory and in the environment eval-truffle5 (look for this marker before the $ prompt)
+#open anotrher terminal
+#While still in ~/eval-truffle5  
 
 ### (eval-truffle5) $ npm install -g truffle@5.0.2
 ### (eval-truffle5) $ which truffle
 
 #Output something like: /home/username/eval-truffle5/node-v10.15.0-linux-x64/bin/truffle
 
-#In my case simple 'truffle compile' pointed to the older version), so please give explicit path if necessary
-### (eval-truffle5) $ ~/eval-truffle5/node-v10.15.0-linux-x64/bin/truffle version 
-
+### (eval-truffle5) $ truffle version 
+#truffle v5.0.2
 #Solidity v0.5.0 (solc-js)
-
 #Node v10.15.0
 
 # Now we are ready to set up the project
 ### (eval-truffle5) $ git clone https://github.com/dev-bootcamp-2019/final-project-kejitan.git
 ### (eval-truffle5) $ cd ~/eval-truffle5/final-project-kejitan/EVcharging
-### (eval-truffle5): Project directory $ ~/eval-truffle5/node-v10.15.0-linux-x64/bin/truffle compile
+### (eval-truffle5): Project directory $ truffle compile
 
 	- Compiling ./contracts/EVcharging.sol...
 	- Compiling ./contracts/Migrations.sol...
@@ -75,7 +75,7 @@
 	- Writing artifacts to ./build/contracts
 
 
-### (eval-truffle5): Project directory$ ~/eval-truffle5/node-v10.15.0-linux-x64/bin/truffle migrate --reset
+### (eval-truffle5): Project directory$ truffle migrate --reset
 
 	- If you're using an HDWalletProvider, it must be Web3 1.0 enabled or your migration will hang.
 
@@ -162,7 +162,7 @@
 	- > Total deployments:   4
 	- > Final cost:          0.09299994 ETH
 
-### (eval-truffle5): Project directory$ ~/eval-truffle5/node-v10.15.0-linux-x64/bin/truffle test
+### (eval-truffle5): Project directory$ truffle test
 
 - Using network 'development'.
 
