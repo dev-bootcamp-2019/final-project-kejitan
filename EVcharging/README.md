@@ -28,6 +28,8 @@ You can test full functionality in the development mode, please see the *Play ar
 
 * For development version, Sample data is populated with cities: Mumbai, Bangkok, Hong Kong and chareget TYPE: DC and Level2.
 
+* EVcharging dApp ahs been deployed on Rinkeby via Infura interface and the contract addresses do not show in etherscan.
+
 
 ## Architecture
 
